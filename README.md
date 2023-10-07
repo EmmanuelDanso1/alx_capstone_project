@@ -15,9 +15,9 @@
 
 
 # TECHNOLOGIES USED:
-- - HTML
-- - CSS
-- - Pyhon(Flask)
+- HTML
+- CSS
+- Pyhon(Flask)
 
 # SCREENSHOTS OR DEMO
 **Wil do later**
