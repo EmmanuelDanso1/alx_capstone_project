@@ -33,7 +33,7 @@
     - [image_search_site](https://github.com/EmmanuelDanso1/frontend_projects/tree/main/Image_Search_app)
 - Social Media Profiles
     - Twitter: [twitter](@BraEmma84)
-    - Github: [github](@EmmanuelDanso1)
+    - Github: [github](https://github.com/EmmanuelDanso1)
     - LinkedIn: [linkedin](https://www.linkedin.com/in/emmanuel-danso-862566249/)
 - Phone: +233544638351
 - Email: kwekudanso21@gmail.com
