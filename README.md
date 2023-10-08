@@ -21,6 +21,7 @@
 
 # SCREENSHOTS OR DEMO
 ![Project Image](images/figma%20porfolio.jpg)
+- Flowchart: ![flowchart](images/portfolio_draw.io.jpg)
 
 # ROADMAP AND FUTURE ENHANCEMENTS
 - - Building more projects to add to the portfolio
