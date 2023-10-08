@@ -17,10 +17,10 @@
 # TECHNOLOGIES USED:
 - HTML
 - CSS
-- Pyhon(Flask)
+- Python(Flask)
 
 # SCREENSHOTS OR DEMO
-**Wil do later**
+![Project Image](images/figma%20porfolio.jpg)
 
 # ROADMAP AND FUTURE ENHANCEMENTS
 - - Building more projects to add to the portfolio
