@@ -1,0 +1,45 @@
+/* setting margin and border manually */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #15162e;
+    color: #fff;
+}
+
+/* nav bar */
+.container{
+    padding:1rem 2.0rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav a {
+    list-style-type: none;
+    color:#fff;
+    text-decoration: none;
+    margin: 0.63rem 1.3rem;
+}
+ nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.63rem 1.3rem;
+ }
+
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.5s;
+ }
+
+ nav ul li a:hover{
+    color: #dcd6d6;
+ }
