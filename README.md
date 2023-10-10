@@ -17,7 +17,7 @@
 # TECHNOLOGIES USED:
 - HTML
 - CSS
-- Python(Flask)
+- JavaScript
 
 # SCREENSHOTS OR DEMO
 ![Project Image](images/figma%20porfolio.jpg)
@@ -31,6 +31,7 @@
 - Projects:
     - [stopwatch](https://github.com/EmmanuelDanso1/frontend_projects/tree/main/Stopwatch)
     - [image_search_site](https://github.com/EmmanuelDanso1/frontend_projects/tree/main/Image_Search_app)
+    - [calculator](https://github.com/EmmanuelDanso1/frontend_projects/tree/main/calculator)
 - Social Media Profiles
     - Twitter: [twitter](@BraEmma84)
     - Github: [github](https://github.com/EmmanuelDanso1)
