@@ -25,7 +25,7 @@ nav a {
     list-style-type: none;
     color:#fff;
     text-decoration: none;
-    margin: 0.63rem 1.3rem;
+    /* margin: 0.63rem 1.3rem; */
 }
  nav ul li {
     display: inline-block;
@@ -43,3 +43,37 @@ nav a {
  nav ul li a:hover{
     color: #dcd6d6;
  }
+
+ /* text and profile image area */
+ .container-header-text {
+    padding-top: 3rem;
+    font-size: 1rem
+ }
+ .container-header-text h3{
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+ }
+ .container-header-text h2{
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+ }
+
+.container-header-text p{
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+.container-header-text{
+    display: flex;
+    align-items: center;
+    /* float: right; */
+    justify-content: space-between;
+
+ }
+.logo img{
+    height: 20rem;
+    width: 30rem;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
