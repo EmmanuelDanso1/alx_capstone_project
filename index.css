@@ -78,7 +78,7 @@ nav a {
     
 }
 
-/* About me  */
+/* .........................About me ........................... */
 .about {
     padding: 5rem 0;
 }
@@ -89,14 +89,15 @@ nav a {
 .description{
     font-size: 1.9rem;
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
+    /* padding-top: 1.1rem; */
 }
 
 .row p {
     font-size: 0.9rem;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    padding-top: 10px;
+    padding-top: 1.1rem;
     /* text-align: center; */
 }
 
@@ -145,4 +146,97 @@ ul li span{
 }
 .title_set_content.first_content{
     display: block;
+}
+
+
+/* .................Projects........... */
+.projects{
+    padding: 3rem 0;
+}
+
+.projects_list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3rem;
+
+}
+
+.project{
+    border-radius: 0.63rem;
+    position: relative;
+    overflow:hidden;
+}
+
+.project img{
+    width: 100%;
+    height: 14rem;
+    border-radius:0.63rem ;
+    display: block;
+    transition: transform 0.5s;
+}
+/* adding some shades and gradients to the image */
+.project_flow{
+    width: 100%;
+    height: 0;  
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(25, 25, 105));
+    border-radius: 0.63rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    text-align: center;
+    font-size:0.9rem ;
+    transition: height 0.5s;
+}
+
+.project_flow h3{
+    font-weight: 500;
+    margin: 1.1rem;
+}
+
+.project_flow a{
+    margin-top: 1.1rem;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.05rem;
+    line-height: 3.8rem;
+    background: #fff;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+/* hover over image */
+.project:hover img{
+    transform: scale(1.1);
+}
+/* display link when hover on image  so height was set to 0 at project_flow*/
+.project:hover .project_flow {
+    height: 100%;
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 0.9rem 3rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: #c7c7dd;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: rgb(25, 25, 105);
+    cursor: pointer;
 }

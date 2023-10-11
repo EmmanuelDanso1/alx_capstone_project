@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio_Project</title>
     <link rel="stylesheet" href="index.css">
+
+    <script src="https://kit.fontawesome.com/68c69f483e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- nav bar -->
@@ -69,26 +71,41 @@
             </div>
         </div>
     </div>
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-project">Projects</h1>
+            <div class="projects_list">
+                <div class="project">
+                    <img src="images/IMG_7776.jpg" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>Calculator</h3>
+                        <p>Do some basic calculation</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/IMG_7777.jpg" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>Stop Watch</h3>
+                        <p>A stop watch to time yourself</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/IMG_7785.jpg" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>Image Search Site</h3>
+                        <p>Search and download any image for yourself</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+        
+    </div>
 
-    <script>
-        // getting the skills set
-        const titleDescs = document.getElementsByClassName('title_desc');
-        const titleSetContents = document.getElementsByClassName('title_set_content');
-
-        // using a function and for of loop to loop through the content when clicked
-        function setTitle(contents){
-            // removes the active page when new page is clicked
-            for(titleDesc of titleDescs){
-                titleDesc.classList.remove('active');
-            }
-            
-            for(titleSetContent of titleSetContents){
-                titleSetContent.classList.remove('first_content');
-            }
-            // adding event to add content to active page
-            event.currentTarget.classList.add('active');
-            document.getElementById(contents).classList.add('first_content');
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
