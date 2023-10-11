@@ -23,12 +23,72 @@
                 <h3>Hello, It's me,</h3>
                 <h2>Emmanuel Danso</h2>
                 <h3>And I'm a Software Engineer</h3>
-                <p>As a Software Engineer, solving complex tech problems to enhance <br>technology always been my goal</p>
+                <p>As a Software Engineer, solving complex tech problems to enhance <br>technology has always been my goal</p>
             </div>
             <div class="logo">
                 <img src="images/IMG_4921.jpg" alt="profile" srcset="">
             </div>
         </div>
     </div>
+    <!-- About me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-me"><h1 class="description">About Me</h1></div>
+                <p>I'm a young guy who is enthused with technology and always want to learn new things.<br>
+                    I hold a bachelors degree in Physics with Computer Science from the University of Ghana.<br>
+                    My skillset includes building websites to enhance technology and thinking through problems with the aim of solving it <br>
+                    I firmly believe that with continous learning, adaptibiliy and consistency are the key to success as technology evolves.
+                </p>
+                <!-- some experience and skill set -->
+                <div class="title_set">
+                    <div class="title_desc active" onclick="setTitle('skills')">Skills</div>
+                    <div class="title_desc" onclick="setTitle('experience')">Experience</div>
+                    <div class="title_desc" onclick="setTitle('education')">Education</div>
+
+                </div>
+                <div class="title_set_content first_content" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web application</li>
+                    </ul>
+                </div>
+                <div class="title_set_content" id="experience">
+                    <ul>
+                        <li><span>Team Leader </span><br> GRA- Property rate and funds mobilization</li><br>
+                        <li><span>Card search and Issuance </span><br> National Identification Authority</li><br>
+                        <li><span>Management of Information System </span><br> Akuapem South Municipal Assembly</li>
+                    </ul>
+                </div>
+                <div class="title_set_content" id="education">
+                    <ul>
+                        <li><span>2017-2021 </span><br> University of Ghana</li><br>
+                        <li><span>2013-2016 </span><br> Aburi Presby SHTS</li><br>
+                        <li><span>2010-2013 </span><br> P.W.C.E Demonstration School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // getting the skills set
+        const titleDescs = document.getElementsByClassName('title_desc');
+        const titleSetContents = document.getElementsByClassName('title_set_content');
+
+        // using a function and for of loop to loop through the content when clicked
+        function setTitle(contents){
+            // removes the active page when new page is clicked
+            for(titleDesc of titleDescs){
+                titleDesc.classList.remove('active');
+            }
+            
+            for(titleSetContent of titleSetContents){
+                titleSetContent.classList.remove('first_content');
+            }
+            // adding event to add content to active page
+            event.currentTarget.classList.add('active');
+            document.getElementById(contents).classList.add('first_content');
+        }
+    </script>
 </body>
 </html>
