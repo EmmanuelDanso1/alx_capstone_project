@@ -240,3 +240,71 @@ ul li span{
     background-color: rgb(25, 25, 105);
     cursor: pointer;
 }
+
+/* ... contact ... */
+.row_contact{
+    display: flex;
+    /* margin-right: 4rem; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact_left {
+    flex-basis: 40%;
+}
+
+.contact_left p{
+    margin-top: 0.6rem;
+}
+.contact_left p i {
+    margin-right: 0.6rem;
+    font-size: 1rem;
+
+}
+.social-media-icons{
+    margin-top: 1.5rem;
+}
+.social-media-icons a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #fff;
+    display: inline-block;
+
+}
+
+.contact_right {
+    flex-basis: 55%;
+}
+
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #d4c4c4;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    border-radius: 0.8rem;
+}
+form label {
+    font-size: 1.2rem;
+}
+.btn-submit{
+    display: inline-block;
+    /* margin: 3rem auto; */
+    width: fit-content;
+    border: 1px solid black;
+    padding: 0.9rem 3rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    list-style-type: none;
+    color:#05050f;
+    background: #c7c7dd;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.btn-submit:hover{
+    background-color: #aeafcd;
+}
