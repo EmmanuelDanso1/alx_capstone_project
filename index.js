@@ -17,3 +17,14 @@
      event.currentTarget.classList.add('active');
      document.getElementById(contents).classList.add('first_content');
  }
+
+//  side-menu navigation
+const sideMenu = document.getElementById('side-menu');
+// opens the side menu when clicked
+function openMenu(){
+    sideMenu.style.right = '0';
+}
+// closes side menu when clicked
+function closeMenu(){
+    sideMenu.style.right = '-13rem';
+}

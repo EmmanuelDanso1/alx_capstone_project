@@ -13,15 +13,17 @@
     <div class="container">
         <nav>
             <a href="home"><h3>PORTFOLIO</h3></a>
-            <ul>
+            <ul id="side-menu">
                 <li><a href="About">About Me</a></li>
                 <li><a href="projects">Projects</a></li>
                 <li><a href="contact">Contact</a></li>
-
+                <!-- added hamburger and close icon -->
+                <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="container-header-text">
-            <div>
+            <div class="text">
                 <h3>Hello, It's me,</h3>
                 <h2>Emmanuel Danso</h2>
                 <h3>And I'm a Software Engineer</h3>
@@ -122,7 +124,7 @@
                 </div>
                 
                 <div class="contact_right">
-                    <form action=""  method="post">
+                    <form action="">
                         <div>
                             <label for="name">Name:</label><br>
                             <input type="text" name="name" placeholder=" name" required>

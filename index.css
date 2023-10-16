@@ -46,8 +46,8 @@ nav a {
 
  /* text and profile image area */
  .container-header-text {
-    padding-top: 3rem;
-    font-size: 1rem
+    /* padding-top: 3rem;
+    font-size: 1rem */
  }
  .container-header-text h3{
     margin-top: 1.2rem;
@@ -64,6 +64,7 @@ nav a {
 }
 .container-header-text{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     /* float: right; */
     justify-content: space-between;
@@ -75,6 +76,7 @@ nav a {
     margin-bottom: 10px;
     border-radius: 20px;
     object-fit: cover;
+    flex-wrap: wrap;
     
 }
 
@@ -307,4 +309,48 @@ form label {
 }
 .btn-submit:hover{
     background-color: #aeafcd;
+}
+
+/* ..Responsive Design on different screens */
+nav .fas {
+    display: none;
+}
+@media only screen and (max-width:600px){
+    /* side nav */
+    nav .fas{
+        display: block;
+        font-size: 1.1rem;
+    }
+    nav ul{
+        background: #323052;
+        position: fixed;
+        top: 0;
+        right: -13rem;
+        width: 13rem;
+        height: 100vh;
+        font-size: 1rem;
+        font-weight: 200;
+        padding-top: 3.1rem;
+        z-index: 2;
+        transition: right 0.5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 1.6rem;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 1.6rem;
+        left: 1.6rem;
+        cursor: pointer;
+    }
+    /* image alignment*/
+    .text, .logo{
+        flex-basis: 100%;
+    }
+    .logo{
+        margin-bottom: 1.9rem;
+    }
+    
 }
