@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio_Project</title>
     <link rel="stylesheet" href="index.css">
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("nO4hNpf6PITriXz8A");
+    })();
+    </script>
     <script src="https://kit.fontawesome.com/68c69f483e.js" crossorigin="anonymous"></script>
+    <style>
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <!-- nav bar -->
     <div class="container">
         <nav>
-            <a href="home"><h3>PORTFOLIO</h3></a>
+            <a href="#home"><h3>PORTFOLIO</h3></a>
             <ul id="side-menu">
-                <li><a href="About">About Me</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <!-- added hamburger and close icon -->
                 <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
@@ -42,7 +57,7 @@
                 <p>I'm a young guy who is enthused with technology and always want to learn new things.<br>
                     I hold a bachelors degree in Physics with Computer Science from the University of Ghana.<br>
                     My skillset includes building websites to enhance technology and thinking through problems with the aim of solving it <br>
-                    I firmly believe that with continous learning, adaptibiliy and consistency are the key to success as technology evolves.
+                    I firmly believe that with continous learning, adaptabiliy and consistency which are the keys to success as technology evolves.
                 </p>
                 <!-- some experience and skill set -->
                 <div class="title_set">
@@ -53,7 +68,8 @@
                 </div>
                 <div class="title_set_content first_content" id="skills">
                     <ul>
-                        <li><span>Web Development</span><br>Designing Web application</li>
+                        <li><span>Web Development</span><br>Designing Web application</li><br>
+                        <li><span>Programming Skills</span><br>PHP | Python(Flask) | Javascript <br> Bootstrap | MySQL | API</li>
                     </ul>
                 </div>
                 <div class="title_set_content" id="experience">
@@ -103,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="https://github.com/EmmanuelDanso1/"  target="_blank" class="btn">See More</a>
         </div>
         
     </div>
@@ -124,20 +140,21 @@
                 </div>
                 
                 <div class="contact_right">
-                    <form action="">
-                        <div>
-                            <label for="name">Name:</label><br>
-                            <input type="text" name="name" placeholder=" name" required>
-                        </div>
-                        <div>
-                            <label for="email">Email:</label><br>
-                            <input type="email" name="email" placeholder=" email" required>
-                        </div>
-                        <div>
-                            <label for="message">Message:</label><br>
-                            <textarea name="message" id="" rows="7" placeholder=" message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Submit</button>
+                    <form id="contact-form" method="post" action="#" onsubmit="validateForm()">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Type your name"><br>
+                        <span id="name-error" class="error"></span><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Type your email"><br>
+                        <span id="email-error" class="error"></span><br><br>
+                
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="7" placeholder="message"></textarea><br>
+                        <span id="message-error" class="error"></span><br><br>
+                
+                        <input type="submit" class="btn-submit" onclick="sendMail()" value="Submit">
+                        <p id="success-message" class="success" style="display: none;"></p>
                     </form>
                 </div>
             </div>
