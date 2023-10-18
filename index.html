@@ -140,17 +140,17 @@
                 </div>
                 
                 <div class="contact_right">
-                    <form id="contact-form" method="post" action="#" onsubmit="validateForm()">
-                        <label for="name">Name:</label><br>
+                    <form id="contact-form" onsubmit="return validateForm()">
+                        <label for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Type your name"><br>
                         <span id="name-error" class="error"></span><br><br>
                 
-                        <label for="email">Email:</label><br>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Type your email"><br>
                         <span id="email-error" class="error"></span><br><br>
                 
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="7" placeholder="message"></textarea><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="7" name="message" placeholder="Type your message"></textarea><br>
                         <span id="message-error" class="error"></span><br><br>
                 
                         <input type="submit" class="btn-submit" onclick="sendMail()" value="Submit">

@@ -71,7 +71,6 @@ function validateForm() {
         setInterval(function(){
             successMessage.innerHTML = '';
         }, 7000)
-        form.reset();
         successMessage.style.display = 'block';
         return false; // Prevent actual form submission for this example
     } else {
@@ -80,22 +79,27 @@ function validateForm() {
     }
 }
 
+// using regex
 function validateEmail(email) {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
-
+         
 // using emailjs to configure email when visitors check the site
 function sendMail(){
-let serviceID = "service_nshb4v5";
-let templateID = "template_3mp2ie4";
+    let serviceID = "service_nshb4v5";
+    let templateID = "template_3mp2ie4";
 
-let data = {
-    senderName: document.querySelector("#name").value,
-    senderEmail: document.querySelector("#email").value,
-    senderMessage : document.querySelector("#message").value
-};
-emailjs.send(serviceID,templateID,data).then(
-
-).catch((error) =>console.log(error)  )
-}
+    let data = {
+        senderName: document.querySelector("#name").value,
+        senderEmail: document.querySelector("#email").value,
+        senderMessage : document.querySelector("#message").value
+    };
+    emailjs.send(serviceID,templateID,data).then(
+    (response) => {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    }
+    )
+   }
